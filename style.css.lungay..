@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorated Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: pink;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    position: relative;
+    font-size: 2em;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80%;
+    height: 4px;
+    background-color: #ff6347;
+}
+
+p {
+    position: relative;
+    font-size: 1.2em;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+p::before {
+    content: '❝';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 2em;
+    color: #ff6347;
+}
+
+p::after {
+    content: '❞';
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    font-size: 2em;
+    color: #ff6347;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e5533d;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    <main>
+        <p>You're Mami's Page hehe!</p>
+        <button>Click Me</button>
+    </main>
+</body>
+</html>
